@@ -124,3 +124,23 @@ refty-node-versions-service/
 ```
 
 ---
+
+## 🐳 Docker Deployment
+
+You can containerize and run this service using Docker.
+
+### 📦 Build the Docker image
+
+```bash
+docker build -t refty-node-service .
+```
+
+### ▶️ Run the container
+
+```bash
+docker run -p 8000:80 --env-file .env refty-node-service
+```
+
+- This exposes the API on localhost:8000
+
+---
